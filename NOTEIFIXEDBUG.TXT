@@ -1,0 +1,43 @@
+LETSSSSSSSSSSS GOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+ok basically values woyldnt change only currencies for several reasons. i realized that it doesnt change
+because when we convert we are actually converting the whole thing and not the previous event.
+
+so instead of 
+const swap = () => {
+        setAmount(0)
+        setFrom(to)
+      setTo(from)
+        
+        
+    }
+
+const convert = () => {
+     setConvertedAmount(amount * currencyInfo[to])
+
+     // I  FIXED   ITTTTT
+
+    }
+ i did this
+
+    const convert = () => {
+     setConvertedAmount( a => a * currencyInfo[to])
+
+     // I  FFIXEXEXEEDDD   ITTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+    //IT WAS THIS EASY MY BRRAIN DIED BUT I DID IT
+      
+      
+    }
+
+const swap = () => {
+        const amountA = amount
+        const amountB = convertedAmount
+        setConvertedAmount(amountA)
+        setAmount(amountB)
+        setFrom(to)
+      setTo(from)
+        
+        
+    }
+    nvm the calculation got messed up
